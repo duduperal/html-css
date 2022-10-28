@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio007</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Você está avendo a imagem completa? Experimente ampliar o tamanho da sua janela para aproveitar melhor a sua experiência indignantemente boa e satisfatória.&#x1f60b!</p>
+    <picture>
+        <source media="(min-width: 1210px)" srcset="imagens/paisagem-g.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="imagens/paisagem-m.png" type="image/png">
+        <img src="imagens/paisagem-p.png" alt="Foto Flexível">
+    </picture>
+    <!--DARIA PARA FAZER ASSIM: 
+     <picture>
+        <source media="(max-width: 1210px)" srcset="imagens/paisagem-g.png" type="image/png">   
+        <source media="(max-width: 750px)" srcset="imagens/paisagem-m.png" type="image/png">
+        <img src="imagens/paisagem-g.png" alt="Foto Flexível"
+     </picture>
+    -->
+</body>
+</html>

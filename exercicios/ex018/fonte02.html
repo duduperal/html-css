@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+        
+        @font-face {
+            font-family: love;
+            src: url('fontes/love\ story\ ttf.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        
+        }
+            /* Tipos de format 
+                -Opentype (otf)
+                -truetype (ttf)
+                -embedded-opentype
+                -truetype-aat (Apple advanced typohraphy)
+                -svg
+            */
+
+        body {
+            font-family: "permanent marker"
+
+        }
+
+        h1 {
+            font-family: love, Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos numquam, quia sapiente ipsum natus distinctio nisi provident aut quas recusandae labore dignissimos voluptate asperiores dolorem voluptatibus ipsa facilis assumenda commodi!</p>    
+</body>
+</html>

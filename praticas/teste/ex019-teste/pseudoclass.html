@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class teste</title>
+    <style>
+        div{
+            display: inline-block;
+            background-color: cyan;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+        }
+
+        .pegadinha > p{
+            display: none;
+        }
+
+        .pegadinha:hover > p{
+            display: block;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="pegadinha">
+        <h2>1</h2>
+        <p>eu estou dentro da div</p>
+    </div>
+    <div class="pegadinha">
+        <h2>2</h2>
+        <p>Eu denovo</p>
+    </div>
+    <div class="pegadinha">
+        <h2>3</h2>
+        <p>olha eu aqui</p>
+    </div>
+</body>
+</html>
