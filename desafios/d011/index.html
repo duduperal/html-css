@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio do astronauta d011</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #container{
+            position: relative;
+            height: 100vh;
+            background: black url(imagens/espaco.jpg) center no-repeat fixed;
+            background-size: cover;
+        }
+
+        div#conteudo{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="conteudo">
+            <img src="imagens/astronauta.png" alt="imagem do astrounauta">
+        </div>
+    </div>   
+</body>
+</html>
