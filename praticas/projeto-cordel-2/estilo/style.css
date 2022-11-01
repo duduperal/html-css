@@ -43,6 +43,7 @@ header > p{
 a{
     color: white;
     text-decoration: none;
+    font-weight: bolder;
 }
 
 a:hover{
@@ -81,6 +82,8 @@ section.imagem > p{
     background-color: rgba(0, 0, 0, 0.349);
     color: white;
     display: inline-block;
+    padding-left: 10px;
+    padding-right: 5px;
 }
 
 
