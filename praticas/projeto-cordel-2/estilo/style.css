@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root{
+    --fonte1: Arial, verdana, sans-serif; 
+    --fonte2: 'Alfa Slab One', cursive;
+    --fonte3: 'Lobster', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body{
+    background-color: darkgrey;
+    min-height: 100vh;
+}
+
+/*CABEÇALHO*/
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;
+    font-family: var(--fonte2);
+    font-size: 5vw;
+    font-variant: small-caps;
+}
+
+header > p{
+    font-family: var(--fonte1);
+    padding-bottom: 50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/*CORPO*/
+section{
+    padding-left: 30px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    font-family: var(--fonte3);
+    line-height: 2em;
+    font-size: 3.5vw;
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.normal > p{
+    
+    padding-bottom: 2em;
+}
+
+section.imagem{
+    background-image: url(../imagens/pexels-photo-372326.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 2px 2px 5px 0px black;
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.349);
+    color: white;
+    display: inline-block;
+}
+
+
+
+
+/*RODAPÉ*/
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
