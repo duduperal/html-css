@@ -8,10 +8,41 @@ Pequenas telas: até 576px
 Celular: de 577px até 768px
 Tablet: de 769px até 992px
 Laptops: de 993px até 1200px
-Desktop/ TV / Telas grandes: de 1201px+
+Desktop: de 1201px até 1920px
+Tv: 1921px+
 */
 @media print{
 
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        background-image: url(../imagens/back-print.jpg);
+        /* Desnecessário */
+    }
+
+    main{
+        border: 2px solid black;
+        width: 90vw;
+    }
+
+    main::after{
+        content: 'Essa impressão foi feita através do site: https://www.duduperal.github.io/html-css/exercicios/ex026/mq004/index.html';
+        font-size: 0.6em;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+        line-height: 1.5em;
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#pc{display: none;}
+    img#print{display: block;}
+    img#tv{display: none;}
+    img#laptop{display: none;}
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) { /* TABLETS */
@@ -24,14 +55,44 @@ Desktop/ TV / Telas grandes: de 1201px+
     img#pc{display: none;}
     img#print{display: none;}
     img#tv{display: none;}
+    img#laptop{display: none;}
 }
 
 @media screen and (min-width: 993px) and (max-width: 1200px) { /* LAPTOPS */
     body{
-        background-image: url(../imagens/);
+        background-image: url(../imagens/back-laptop.jpg);
     }
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#desktop{display: none;}
+    img#print{display: none;}
+    img#tv{display: none;}
+    img#laptop{display: block;}
 }
 
-@media screen and (min-width: 1201px) { /* GRANDES TELAS */
-    
+@media screen and (min-width: 1201px) and (max-width: 1920px) { /* Desktop */
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#desktop{display: block;}
+    img#print{display: none;}
+    img#tv{display: none;}
+    img#laptop{display: none;}
+}
+
+@media screen and (min-width: 1921px) { /* Grandes telas */
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#desktop{display: none;}
+    img#print{display: none;}
+    img#tv{display: block;}
+    img#laptop{display: none;}
 }

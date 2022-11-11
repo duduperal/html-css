@@ -43,6 +43,7 @@ img{
 
 img#phone{display: block;}
 img#tablet{display: none;}
-img#pc{display: none;}
+img#desktop{display: none;}
 img#print{display: none;}
 img#tv{display: none;}
+img#laptop{display: none;}
